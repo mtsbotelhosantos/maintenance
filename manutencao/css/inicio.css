@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+:root{
+    --color: rgb(12, 206, 141);
+}
+.header{
+    justify-content: center;
+    text-align: center;
+}
+.cards-on-corretiva{
+    border: solid rgba(12, 206, 141, 0.664);
+    /* background-color: rgba(174, 174, 174, 0.497); */
+    width: 300px;
+    min-width: 300px;
+    height: 190px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgb(136, 135, 135);
+    transition: transform 0.3s;
+    color: rgb(67, 67, 67);
+    font-weight: 200;
+   
+    
+}
+.cards-on-preventiva{
+    border: solid rgb(255, 145, 0);
+    /* background-color: rgba(174, 174, 174, 0.497); */
+    width: 300px;
+    min-width: 300px;
+    height: 190px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgb(136, 135, 135);
+    transition: transform 0.3s;
+    color: rgb(67, 67, 67);
+    font-weight: 200;
+   
+    
+}
+.cards-on-preventiva > label{
+    font-weight: bold;
+  
+    
+}
+.cards-on-corretiva > label{
+    font-weight: bold;
+  
+    
+}
+.cards-on-preventiva:hover{
+    /* background-color: rgba(85, 85, 85, 0.802); */
+    transform: scale(1.07);
+    cursor: pointer;
+    
+  
+}
+.cards-on-corretiva:hover{
+    /* background-color: rgba(85, 85, 85, 0.802); */
+    transform: scale(1.07);
+    cursor: pointer;
+    
+  
+}
+
+.numero_os{
+    background-color: var(--color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.numero_os_close{
+    background-color:brown;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    
+}
+.nome_equip{
+    font-size: 20px;
+   
+}
+.link-card{
+    text-decoration: none;
+}
+.central{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 10px 10px 10px;
+    
+
+}
+#em_aberto_tit, #em_exec_tit, #paradas_tit, #ag_fecha_tit, #finalizadas_tit{
+    
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#em_aberto_tit{
+    background-color: grey;
+}
+#em_exec_tit{
+    background-color: var(--color);
+}
+#paradas_tit{
+    background-color: rgb(174, 174, 0);
+}
+#ag_fecha_tit{
+    background-color: rgb(174, 104, 0);
+}
+#finalizadas_tit{
+    background-color: brown;
+}
+.tit_cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 320px;
+    flex-direction: column;
+}
+.tit_cards>span{
+    font-size: smaller;
+    display: none;
+    
+}
+.em_aberto_n{
+    background-color: grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.paradas_n{
+    background-color: rgb(174, 174, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.ag_fecha_n{
+    background-color: rgb(174, 104, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.em_aberto, .em_exec, .paradas, .ag_fecha, .fechadas{
+    margin: 15px;
+    justify-content: center;
+}
+.title_ord{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+  
+}
+
+@media (max-width: 600px){
+    .central{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        align-items: center;
+        
+
+
+        
+        
+        
+    
+       
+    }
+    main{
+        margin: 70px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

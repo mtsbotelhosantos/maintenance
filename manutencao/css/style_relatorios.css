@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    text-align: center;
+
+}
+
+
+tbody>tr>td{
+    padding: 10px;
+    margin: 10px;
+    border-bottom: solid 1px black;
+    background-color: rgb(226, 226, 226);
+    font-size: small;
+
+}
+fieldset{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+    
+}
+.legend_datas{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.data_prog{
+    font-size: medium;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.titulo_nomes{
+    margin-top: 30px;
+}
+
+.total_apontado{
+    background-color: rgb(183, 238, 255);
+}
+.total_liquido{
+    font-weight: bold;
+    background-color: rgb(59, 226, 255);
+    
+}
+.resumo, .resumo_total{
+    font-size: small;
+}
+.resumo_total{
+    color: rgb(59, 226, 255);
+    font-weight: bolder;
+    background-color: rgb(54, 54, 54);    
+}
+.visible{
+    display: flex;
+}
+.novisible{
+    display: none;
+}

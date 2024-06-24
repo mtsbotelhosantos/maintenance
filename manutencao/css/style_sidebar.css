@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --color: rgb(12, 206, 141);
+}
+
+aside{
+    background-color: var(--color);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    transition: all 0.4s;
+
+}
+aside header{
+    width: 100%;
+    margin-bottom: 16px;
+
+}
+header img{
+    width: 65px;
+    transition: transform 0.4s;
+}
+header img:hover{
+    transform: scale(1.2);
+}
+aside button{
+    height: 60px;
+    background: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+aside button > span{
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 16px 0 10px;
+    border-radius: 24px;
+    line-height: 1;
+    transition: all 0.2s;
+
+}
+
+aside button > span:hover{
+    background-color: gray
+}
+.web-text{
+    display: none;
+}
+
+.material-symbols-outlined{
+    margin-right: 10px;
+    font-size: 40px;
+}
+aside button > span > span{
+    font-size: 20px;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+}
+main{
+    margin-left: 80px;
+    transition: 0.4s;
+}
+
+
+/* -----------asside-web-close */
+
+
+.aside-web-close{
+        width: 240px;
+    }
+.web-text-close{
+        display: flex;
+       
+    }
+
+/* .main-close{
+        margin-left: 250px;
+    } */
+   
+    
+/* ---------fim asside-web-close */
+
+.mobile-button{
+    display: none;
+    align-items: center;
+    margin: 16px;
+    background: transparent;
+    border: none;
+    color: var(--color);
+
+}
+.menu-mobile{
+    display: none;
+
+}
+.menu-mobile-active{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+
+}
+.img{
+    display: none;
+   
+}
+.menu-mobile-active button{
+    background: transparent;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    
+    
+}
+.menu-mobile-active button :hover{
+    background-color: gray
+}
+.menu-mobile-active button > span{
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+    
+    
+}
+.mobile-text{
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px){
+    aside{
+        display: none;
+    }
+    .mobile-button{
+        display: flex;
+        margin-left: auto;
+        color: white;
+
+    }
+   
+    #main{
+        margin-left: 0px;
+        
+        
+    }
+    .img{
+        display: flex;
+        width: 65px;
+       
+    }
+    .head-mobile{
+        display: flex;
+        height: 70px;
+        padding: 4px;
+        background-color: var(--color);
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+      
+
+        
+        
+    }
+
+}

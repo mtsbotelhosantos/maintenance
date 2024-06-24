@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+:root{
+    /* --color: rgb(74, 209, 254); */
+    --color-equip:  rgb(80, 80, 80);
+}
+/* textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}   */
+.header{
+    margin: 10px;
+    text-align: center;
+
+   
+}
+.header>h2{
+    margin-bottom: 10px;
+}
+.central{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.botao_abrir_os{
+    background-color: var(--color-equip);
+    padding: 4px;
+    border-radius: 9px;
+    
+
+    
+    
+}
+.botao_abrir_os:hover{
+    background-color: rgb(0, 131, 174);
+    
+    
+
+    
+    
+}
+
+.botao_abrir_os > a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+.card_wraper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.card_wraper>table{
+    margin: 10px;
+}
+.card_wraper>table>thead{
+    background-color: var(--color-equip);
+    cursor: pointer;
+    
+}
+table>thead>tr>th{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+table>tbody>tr{
+    text-align: center;
+    height: 25px;
+    background-color: rgba(233, 233, 233, 0.449);
+    
+}
+.title_ord{
+    text-align: center;
+}
+@media (max-width: 600px){
+
+    main{
+        margin: 75px 0;
+        text-align: center;
+    }
+}
